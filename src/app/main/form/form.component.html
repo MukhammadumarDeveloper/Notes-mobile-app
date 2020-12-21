@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="close()">
+        <ion-icon name="arrow-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Yangi maqola qo'shish</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <div class="container">
+    <form [formGroup]="maqola" (ngSubmit)="onSubmit(maqola.value)">
+    <ion-item>
+      <ion-label position="fixed">Sarlavhasi</ion-label>
+      <ion-input formControlName="sarlavha" placeholder="kiriting"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">Summary</ion-label>
+      <ion-textarea
+      formControlName="matn"
+      rows="6"
+       placeholder="Matnni shu yerga yozing">
+      </ion-textarea>
+    </ion-item>
+    <ion-button type="submit">Saqlash</ion-button>
+    </form>
+  </div>
+</ion-content>

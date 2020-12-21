@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Ro'yxatdan o'tish</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <div class="container">
+  <h2>Assalomu alaykum!</h2>
+  <p>Dasturga hush kelibsiz! Bu dastur asosan kundalik voqealar yoki boshqa sirli ma'lumotlarni saqlash
+    uchun asqotadi! Dastur 100% himoyalangan! Shubha va gumonga o'rin yo'q!
+  </p>
+  <p>
+    Bu dasturdan foydalanish uchun kirish parolini o'rnatishingiz muhim!
+    Bu bilan siz ma'lumotlaringizni sizdan boshqa hech kim o'qiy olmasligini 
+    ta'minlagan bo'lasiz! Marhamat kalitso'zni kiriting:
+  </p>
+  <ion-item>
+    <ion-label position="fixed">Kalitso'z:</ion-label>
+    <ion-input [(ngModel)]="key" placeholder="kiriting" type="password"></ion-input>
+  </ion-item>
+  <ion-fab-button (click)="save()">Saqlash</ion-fab-button>
+  </div>
+</ion-content>
